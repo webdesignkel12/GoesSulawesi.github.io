@@ -135,7 +135,7 @@ label{
 </div>
 
 <div class="topnav">
-  <a href="index.html">Home</a>
+  <a href="Index.html">Home</a>
   <a href="About Us.html">About Us</a>
   <a href="Gallery.html">Gallery</a>
   <a href="Contact Us.html" style="float:right">Contact Us</a>
