@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<style>
+*{
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial;
+padding: 10px;
+background: #9494FF;
+}
+
+/* Header/Blog Title */
+.header {
+padding: 30px;
+text-align: center;
+background: #BBBBFF;
+}
+
+.header h1 {
+font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color: #E2E2FF;
+}
+
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color:#191970;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #8080FF;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+float: left;
+width: 77%;
+}
+
+/* Right column */
+.rightcolumn {
+float: left;
+width: 23%;
+background-color: #9494FF;
+padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+background-color: #aaa;
+width: 100%;
+padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+background-color: #BBBBFF;
+padding: 20px;
+margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content:"";
+display: table;
+clear: both;
+}
+
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: #BBBBFF;
+margin-top: 20px;
+}
+
+.mail{
+		width: 730px;
+		margin: 10px auto;
+		border: 1px solid #ddd;
+		padding: 10px;
+	}
+.mail div{
+		padding: 5px 0;
+		border-bottom: 1px solid #ddd;
+	}
+label{
+		width: 100px;
+		display: inline-block;
+	}
+.bottom{
+		font-size: 12px;
+		text-align: right;
+	}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<font color="#191970">
+
+<div class="header">
+  <h1>GoEs</h1>
+<img src="GoEs.png">
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="About Us.html">About Us</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Contact Us.html" style="float:right">Contact Us</a>
+</div>
+
+<div class="row">
+    <div class="card">
+      <h2>Contact Us</h2>
+      <h5>Any question, please fill the form to contact our email</h5>
+      <div class="mail">
+        <form name="Contact-form-GoeS">
+            <div>
+                <label for="nama">Nama</label>
+                <input type="text" name="nama">
+            </div>
+    
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email">
+            </div>
+    
+            <div>
+              <label for="Jns_pesan :">Pesan</label>
+              <select name="jns_pesan">
+                <option value="komentar">Komentar</option>
+                <option value="saran">Keluhan</option>
+              </select>
+          </div>
+
+            <div>
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="" cols="30" rows="10"></textarea>
+            </div>
+    
+            <button type="submit" class="button">Submit</button>
+    
+        </form>
+    </div>
+    </div>
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyekqBW83_Vp6uRjaYqavtHztSjM3xUi-ayTCPXBggBsoUKgLmRjNAYEemqzFUKmGD6/exec'
+  const form = document.forms['Contact-form-GoeS']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<div class="footer">
+  <p>Author: Kelompok 12 <br>
+  <a href="mailto:projectwb4@gmail.com">projectwb4@gmail.com</a></p>
+  <a href="http://instagram.com/kemenparekraf.ri"><img src="IG.png" width="50" height="50"></a>
+  <a href="https://www.facebook.com/ParekrafRI/"><img src="facebook.png" width="50" height="50"></a>
+  <a href="https://www.tiktok.com/@kemenparekraf"><img src="tiktok.png" width="50" height="50"></a>
+<a href="https://goo.gl/maps/eM1ysXSrw4XVVjbP9"><img src="MAP.png" width="50" height="50"></a>
+</div>
+
+</body>
+</html>

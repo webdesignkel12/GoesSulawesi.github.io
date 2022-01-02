@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<style>
+*{
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial;
+padding: 10px;
+background: #9494FF;
+}
+
+/* Header/Blog Title */
+.header {
+padding: 30px;
+text-align: center;
+background: #BBBBFF;
+}
+
+.header h1 {
+font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color: #E2E2FF;
+}
+
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color:#191970;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #8080FF;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+float: left;
+width: 77%;
+}
+
+/* Right column */
+.rightcolumn {
+float: left;
+width: 23%;
+background-color: #9494FF;
+padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+background-color: #aaa;
+width: 100%;
+padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+background-color: #BBBBFF;
+padding: 20px;
+margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content:"";
+display: table;
+clear: both;
+}
+
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: #BBBBFF;
+margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {
+width: 100%;
+padding: 0;
+}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.topnav a {
+float: none;
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<font color="#191970">
+
+<div class="header">
+<h1>GoEs</h1>
+<img src="GoEs.png">
+</div>
+
+<div class="topnav">
+<a href="Index.html">Home</a>
+<a href="About Us.html">About Us</a>
+<a href="Gallery.html">Gallery</a>
+<a href="Contact Us.html" style="float:right">Contact Us</a>
+</div>
+
+<div class="row">
+<div class="leftcolumn">
+<div class="card">
+<h2>Explore Sulawesi</h2>
+<h5>Wisata Alam di Sulawesi</h5>
+<img src= "Wisata Sulawesi.jpg">
+<p>Sulawesi adalah sebuah pulau di Indonesia yang merupakan 1 dari 4 kepulauan Sunda Besar dan merupakan salah satu pulau terbesar ke 11 di dunia. Sebuah pulau yang memiliki keanekaragaman budaya yang menarik dan juga keindahan alam yang mempesona ini menjadikan Pulau Sulawesi salah satu dari destinasi wisata unggulan yang berada di Indonesia. Banyak sekali tempat-tempat indah dan menakjubkan yang ada di Pulau Sulawesi ini. Ingin tahu wisata alam apa saja yang terkenal? Yuk simak rekomendasi tempat wisata di Pulau Sulawesi yang populer dan wajib dikunjungi!</p>
+</div>
+</div>
+<div class="rightcolumn">
+<div class="card">
+<h2>About</h2>
+<img src= "Sulawesi.png">
+<p>Sebagai salah satu pulau utama dan terbesar ke-4 di Indonesia, banyak tempat wisata di Sulawesi yang layak dikunjungi untuk liburan menyenangkan bersama keluarga dan teman-teman. Ada 6 propinsi di Pulau Sulawesi yang bisa dijelajahi, yaitu Sulawesi Barat, Sulawesi Utara, Sulawesi Tengah, Sulawesi Selatan, Sulawesi Tenggara dan Gorontalo. Jika kamu menyukai wisata alam, maka pulau ini sangat cocok untuk kamu kunjungi!</p>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<p>Author: Kelompok 12<br>
+<a href="https://www.google.com/intl/id/gmail/about/">projectwb4@gmail.com</a></p>
+<a href="http://instagram.com/kemenparekraf.ri"><img src="IG.png" width="50" height="50"></a>
+<a href="https://www.facebook.com/ParekrafRI/"><img src="facebook.png" width="50" height="50"></a>
+<a href="https://vt.tiktok.com/ZSeH4q2V4/"><img src="tiktok.png" width="50" height="50"></a>
+</div>
+
+</body>
+</html>

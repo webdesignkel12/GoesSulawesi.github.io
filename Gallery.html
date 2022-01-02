@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+    </head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: #BBBBFF;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #E2E2FF;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #191970;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #8080FF;
+            color: black;
+        }
+
+        .card {
+            display: grid;
+            width: 200px;
+            height: 250px;
+            grid-template-rows: repeat(2, 230px);
+            border-radius: 50%;
+            margin: auto auto 180px;
+
+
+        }
+
+        .img-wisata {
+            border-radius: 10px;
+            width: 400px;
+
+        }
+
+        .main {
+            display: grid;
+            grid-template-rows: 3;
+            gap: 310px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            gap: 130px;
+        }
+
+        .card1 {
+            margin-top: -150px;
+            width: 100px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 5px;
+            padding: 10px;
+        }
+
+        .card2 {
+            background-color: rgb(153, 255, 255);
+            height: 280px;
+            color: rgb(14, 13, 13);
+            font-size: 18px;
+            padding: 8px;
+            text-align: justify;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #BBBBFF;
+            margin-top: 300px;
+        }
+
+        @media screen and(min-width: 360px) and(max-width: 550px) {
+            .row {
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 100px;
+                margin-bottom: -200px;
+            }
+
+            .card {
+                display: grid;
+                width: 200px;
+                height: 250px;
+                grid-template-rows: repeat(2, 130px);
+                border-radius: 50%;
+                margin: 50px 0 200px 40px;
+
+
+            }
+
+            .img-wisata {
+                border-radius: 10px;
+                width: 300px;
+                height: 150px;
+            }
+
+            .jumbotron {
+                width: 400px;
+                height: 250px;
+            }
+
+            .card2 {
+                background-color: rgb(153, 255, 255);
+                height: 390px;
+                color: rgb(14, 13, 13);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                font-size: 18px;
+                padding: 8px;
+                text-align: justify;
+            }
+
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #BBBBFF;
+                margin-top: 450px;
+            }
+        }
+
+        @media screen and(min-width: 550px) and(max-width:900px) {
+            .row {
+                display: grid;
+                grid-template-columns: repeat(2, 300px);
+            }
+
+            .jumbotron {
+                width: 810px;
+                height: 500px;
+            }
+
+            .card {
+                display: grid;
+                width: 200px;
+                height: 250px;
+                grid-template-rows: repeat(3, 130px);
+                border-radius: 50%;
+                margin: 50px 10px 100px;
+
+
+            }
+
+            .card2 {
+
+                color: rgb(14, 13, 13);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+
+            }
+
+            .img-wisata {
+                border-radius: 10px;
+                width: 350px;
+                height: 150px;
+            }
+        }
+    </style>
+
+    <body>
+
+
+        <main>
+            <div class="header">
+                <h1>GoEs</h1>
+                <img src="xxx.png">
+            </div>
+
+            <div class="topnav">
+                <a href="Index.html">Home</a>
+                <a href="About Us.html">About Us</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Contact Us.html" style="float:right">Contact Us</a>
+            </div>
+            <div class="jumbotron">
+                <div>
+                    <img class="jumbotron" src="https://www.wallpapertip.com/wmimgs/182-1825427_gambar-wisata-di-sulawesi-islas-togian.jpg" alt="">
+                </div>
+            </div>
+            <h1 align="center" style="margin:10vh 0px 10vh 0px">Wisata Alam</h1>
+            <div class="main">
+                <div class="row">
+                    <div class="card">
+                        <div><img src="https://kissparry.files.wordpress.com/2017/04/3bunaken-beach-resort-11.jpg" alt="" class="img-wisata">
+                            <div class="card1">
+                                <p style="margin-top: -8px; color: white;">BUNAKEN</p>
+                            </div>
+                        </div>
+                        <div class="card2">Diawali dari provinsi paling utara, jangan sampai melewatkan kecantikan pulau
+                                                    Bunaken. Pulau seluas 8,08 km persegi di Teluk Manado ini bisa ditempuh dengan 30 menit
+                                                    perjalanan menggunakan speed boat dari Pelabuhan Manado.
+                            <br><br>
+                            Pulau Bunaken dan laut di sekitarnya masuk ke dalam kawasan Taman Nasional Bunaken. Di sini
+                                                    terdapat 20 titik penyelaman (diving) yang disebut-sebut masuk daftar favorit penyelam
+                                                    mancanegara.</div>
+                    </div>
+                    <div class="card">
+                        <div><img src="https://phinemo.com/wp-content/uploads/2017/05/Danau-Linow.jpg" alt="" class="img-wisata">
+                            <div class="card1">
+                                <p style="margin-top: -8px; color: white;">DANAU LINOW</p>
+                            </div>
+                        </div>
+                        <div class="card2">Memiliki warna air danau yang bisa berubah-ubah warna, menjadi salah satu hal
+                                                    unik
+                                                    pada tempat wisata di Kota Tomohon, Sulawesi Utara. Danau Linow sudah terkenal dengan
+                                                    keindahannya sejak dulu, tidak heran jika ini masuk ke deretan tempat wisata yang wajib
+                                                    dikunjungi.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div><img src="https://cdn.idntimes.com/content-images/community/2019/12/50259630-112935789800096-4981837830396080794-n-6da7322f94c2ed768cd7579cc5d88f79_600x400.jpg" alt="" class="img-wisata">
+                            <div class="card1">
+                                <p style="margin-top: -8px; color: white;">LIHAGA ISLAND
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            Walau sudah banyak para petualang yang ke sini, kebersihan dan keindahan nya
+                                                    tetap
+                                                    terjaga asri. Pasir putih yang sangat halus, serta air laut yang biru jernih, akan membuatmu
+                                                    betah berlama-lama menghabiskan waktu di sini.
+                            
+                                                    Ombaknya yang tenang memudahkanmu untuk melakukan snorkeling dan diving di sekitar Pulau Lihaga
+                                                    ini. Saat musim kemarau adalah saat yang paling tepat untuk datang ke Pulau Lihaga.</div>
+                    </div>
+
+
+                    <div class="card">
+                        <div><img src="https://zonautara.com/wp-content/uploads/2017/06/mahoro-2.jpg" alt="" class="img-wisata">
+                            <div class="card1">
+                                <p style="margin-top: -8px; color: white;">MAHORO ISLAND</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            Keindahan dan keunikan Pulau Mahoro untuk saat ini memang belum ada yang mengalahkan. View
+                                                    alamnya yang masih alami memanjakan mata memandang. Dari bibir pantai pasir putih yang belum
+                                                    tercampur dengan sampah, pemandangan dibawah laut yang dapat ditemukan tak jauh dari bibir
+                                                    pantai.
+                            
+                                                    Pulau Maharo mampu memikat hati sejumlah artis Korea untuk datang ke sini dan melakukan syuting
+                                                    acara Law of The Jungle, sebuah reality show terkenal asal Korea.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div><img src="https://www.celebes.co/wp-content/uploads/2020/11/Taman-Laut-Tumbak.jpg" alt="" class="img-wisata">
+                            <div class="card1">
+                                <p style="margin-top: -8px; color: white;">LAUT LUMBAK</p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            Keindahan bawah laut di Tumbak tidak kalah mengagumkan dengan keindahan taman laut Bunaken yang
+                                                    sudah terkenal seantero dunia. Di Tumbak saat ini ada sekitar 20 titik snorkling dan diving.
+                                                    Beberapa diantaranya yaitu napo kipas, bohaga mangrove, bohaga kecil, MFT 1, MFT2, taman karang
+                                                    dan pintu samudra.
+                            
+                                                    Pemandangan bawah laut begitu indah dengan ratusan spesies ikan beragam jenis. baik hardcoral
+                                                    maupun soft coral seluas kurang
+                                                    lebih 100 hektar dengan berbagai bentuk coral yang cantik dan berwarna warni.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div><img src="https://jayakartanews.com/wp-content/uploads/2018/06/danau-cinta.jpg" alt="" class="img-wisata">
+                            <div class="card1">
+                                <p style="margin-top: -8px; color: white;">LOVE LAKE
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            Dinamakan Danau Cinta karena bentuk penampangnya terlihat bagaikan simbol hati. Untuk dapat
+                                                    melihat danau ini, anda harus berjalan selama sekitar 30 -60 menit menuju bukit. Dari atas bukit
+                                                    akan tergambar jelas simbol hati berwarna kehijauan dengan tepi-tepian yang berwarna senada
+                                                    namun lebih cerah.
+                            
+                                                    Sekilas tampak seperti simbol hati yang berbinar. Pemandangan semakin mengagumkan karena danau
+                                                    dikelilingi hijau pepohonan dan perbukitan. Setelah puas menikmati danau dari atas bukit, kamu
+                                                    bisa turun ke danau untuk berenang dan bermain air.</div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+
+        <div class="footer">
+            <p>Author: Kelompok 12<br>
+                <a href="projectwb4@gmail.com">projectwb4@gmail.com</a>
+            </p>
+            <a href="https://instagram.com"><img src="IG.png" width="50" height="50"></a>
+            <a href="https://facebook.com"><img src="facebook.png" width="50" height="50"></a>
+            <a href="https://www.tiktok.com/"><img src="tiktok.png" width="50" height="50"></a>
+        </div>
+    </body>
+
+
+</html>
